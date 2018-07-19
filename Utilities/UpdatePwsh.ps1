@@ -44,4 +44,4 @@ If( $Release.Name -like "*$CurrentVersion*" ){
 
 InstallForWindows -Release $Release 
 
-[environment]::Exit(0)
+Stop-Process -Name pwsh -Force
