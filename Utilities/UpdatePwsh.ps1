@@ -3,7 +3,7 @@
 
 <#PSScriptInfo
 
-.VERSION 1.0.2
+.VERSION 1.0.3
 
 .GUID 48fcb5e2-0e6a-4a93-9699-f44fc7156482
 
@@ -15,17 +15,17 @@
 
 .TAGS pwsh powershell upgrade
 
-.LICENSEURI 
+.LICENSEURI
 
 .PROJECTURI https://github.com/kvprasoon/PwshUtils/blob/master/Utilities/UpdatePwsh.ps1
 
-.ICONURI 
+.ICONURI
 
-.EXTERNALMODULEDEPENDENCIES 
+.EXTERNALMODULEDEPENDENCIES
 
-.REQUIREDSCRIPTS 
+.REQUIREDSCRIPTS
 
-.EXTERNALSCRIPTDEPENDENCIES 
+.EXTERNALSCRIPTDEPENDENCIES
 
 .RELEASENOTES
 
@@ -35,7 +35,10 @@ Added -Prerelease switch which option of installing Release or pre release versi
 7/20/2018
 Upgrade pwsh script support is currently available only for below Operating Systems.
  - Windows
-#> 
+
+5/21/2019
+Added some error handling incase if no release available.
+#>
 
 
 
@@ -46,7 +49,7 @@ Upgrade pwsh script support is currently available only for below Operating Syst
 <#
 
 .DESCRIPTION
- Script to upgrade pwsh to the latest available release(Only for windows now) 
+ Script to upgrade pwsh to the latest available release(Only for windows now)
 
 .EXAMPLE
 .\UpgarePwsh.ps1
@@ -58,7 +61,7 @@ The above command will install the latest released version of PowerShell core.
 
 The above command will install the latest pre release version of PowerShell core.
 
-#> 
+#>
 
 Param(
     # Use -PreRelease switch to install pre release version of PowerShell core.
